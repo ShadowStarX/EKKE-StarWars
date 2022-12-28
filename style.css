@@ -1,3 +1,74 @@
-body.div {
+body {
     background-color: aquamarine;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* EREDETI */
+#original {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+#sw4, #sw5, #sw6 {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+/* ELŐZMÉNY */
+#prequel {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+#sw1, #sw2, #sw3 {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+/* FOLYTATÁS */
+#sequel {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+#sw7, #sw8, #sw9 {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+/* SPINOFF */
+#spinoff {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+#zsivany, #solo {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+/* MANDALORI */
+#mandalorian {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
