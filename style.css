@@ -8,42 +8,50 @@ body {
     padding: 0 10px;
     font-size: 32px;
     font-weight: bold;
-    position: absolute;
     top: 10%;
     left: 50px;
     opacity: 0;
     transition: 1s all ease-in-out;
 }
 
-.release {
 
-}
-
-.description {
-
-}
-
-
-
-
-/* EREDETI */
-#original {
+.container {
     width: 90%;
     padding: 20px;
     margin: 100px auto;	 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
-#sw4_front, #sw5_front, #sw6_front {
-    width: 500px;
+
+.card {
+    width: 520px;
+    height: 800px;
+    margin: 0 80px;
+    perspective: 1000px;
+}
+
+
+
+.card_sides {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+
+.front, .back {
     margin: 0 80px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: transform 1500ms;
+    transition: transform 1500ms;   
+    transform-style: preserve-3d;
 }
 
-#sw4_front img, #sw5_front img, #sw6_front img {
+
+.front img {
     width: 520px;
     height: 800px;
     object-fit: cover;
@@ -51,136 +59,20 @@ body {
     display: block;
 }
 
-#sw4_front:hover, #sw5_front:hover, #sw6_front:hover{
-    cursor: pointer;
-    transform: scale(1.3) rotateY(180deg);
-    z-index: 2;
+
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
 }
 
 
 
-
-/* ELŐZMÉNY */
-#prequel {
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#sw1_front, #sw2_front, #sw3_front {
-    width: 500px;
-    margin: 0 60px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
-}
-
-#sw1_front img, #sw2_front img, #sw3_front img {
-    width: 520px;
-    height: 800px;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-}
-
-#sw1_front:hover, #sw2_front:hover, #sw3_front:hover {
-    transform: scale(1.3) rotateY(180deg);
-    z-index: 2;
-}
-
-
-/* FOLYTATÁS */
-#sequel {
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#sw7_front, #sw8_front, #sw9_front {
-    width: 500px;
-    margin: 0 60px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
-}
-
-#sw7_front img, #sw8_front img, #sw9_front img {
-    width: 520px;
-    height: 800px;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-    }
-
-#sw7_front:hover, #sw8_front:hover, #sw9_front:hover {
-    transform: scale(1.3) rotateY(180deg);
-    z-index: 2;
-}
-
-
-
-/* SPINOFF */
-#spinoff {
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#zsivany_front, #solo_front {
-    width: 500px;
-    margin: 0 60px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
-}
-
-#zsivany_front img, #solo_front img {
-    width: 520px;
-    height: 800px;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-    }
-
-#zsivany_front:hover, #solo_front:hover {
-    transform: scale(1.3) rotateY(180deg);
-    z-index: 2;
-}
-
-
-
-/* MANDALORI */
-#mandalorian {
-    width: 50%;
-    padding: 20px;
-    margin: 100px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#mand_front {
-    width: 500px;
-    margin: 0 60px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
-}
-
-#mand_front img {
-    width: 520px;
-    height: 800px;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-    }
-
-#mand_front:hover {
-    transform: scale(1.3);
-    z-index: 2;
-}
