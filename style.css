@@ -4,7 +4,15 @@ body {
 }
 
 .title {
-    
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
 }
 
 .release {
@@ -12,21 +20,20 @@ body {
 }
 
 .description {
-    
+
 }
 
-.note {
-    
-}
+
 
 
 /* EREDETI */
 #original {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
     display: flex;
-    align-items: center;
-    height: 300px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #sw4, #sw5, #sw6 {
@@ -37,20 +44,22 @@ body {
 #sw4 img, #sw5 img, #sw6 img {
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     }
 
 
 
+
 /* ELŐZMÉNY */
 #prequel {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
     display: flex;
-    align-items: center;
-    height: 300px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #sw1, #sw2, #sw3 {
@@ -61,7 +70,7 @@ body {
 #sw1 img, #sw2 img, #sw3 img {
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     }
@@ -69,11 +78,12 @@ body {
 
 /* FOLYTATÁS */
 #sequel {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
     display: flex;
-    align-items: center;
-    height: 300px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #sw7, #sw8, #sw9 {
@@ -84,7 +94,7 @@ body {
 #sw7 img, #sw8 img, #sw9 img {
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     }
@@ -92,11 +102,12 @@ body {
 
 /* SPINOFF */
 #spinoff {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
     display: flex;
-    align-items: center;
-    height: 300px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #zsivany, #solo {
@@ -107,7 +118,7 @@ body {
 #zsivany img, #solo img {
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     }
@@ -115,17 +126,18 @@ body {
 
 /* MANDALORI */
 #mandalorian {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
     display: flex;
-    align-items: center;
-    height: 300px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #mandalorian img {
     transition: all 1s ease-in-out;
     width: 270px;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     }
