@@ -18,6 +18,15 @@ body {
     position: relative;
 }
 
+#sw4 img, #sw5 img, #sw6 img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    }
+
+
 
 /* ELŐZMÉNY */
 #prequel {
@@ -32,6 +41,14 @@ body {
     margin-right: 30px;
     position: relative;
 }
+
+#sw1 img, #sw2 img, #sw3 img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    }
 
 
 /* FOLYTATÁS */
@@ -48,6 +65,14 @@ body {
     position: relative;
 }
 
+#sw7 img, #sw8 img, #sw9 img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    }
+
 
 /* SPINOFF */
 #spinoff {
@@ -63,6 +88,14 @@ body {
     position: relative;
 }
 
+#zsivany img, #solo img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    }
+
 
 /* MANDALORI */
 #mandalorian {
@@ -72,3 +105,11 @@ body {
     transform: translateX(0);
     transition: all 1s ease-in-out;
 }
+
+#mandalorian img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    }
