@@ -38,9 +38,9 @@ body {
 
 #sw4, #sw5, #sw6 {
     width: 500px;
-    margin: 0 60px;
+    margin: 0 80px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
+    transition: transform 1500ms;
 }
 
 #sw4 img, #sw5 img, #sw6 img {
@@ -52,7 +52,8 @@ body {
 }
 
 #sw4:hover, #sw5:hover, #sw6:hover{
-    transform: scale(1.3);
+    cursor: pointer;
+    transform: scale(1.3) rotateY(180deg);
     z-index: 2;
 }
 
@@ -85,7 +86,7 @@ body {
 }
 
 #sw1:hover, #sw2:hover, #sw3:hover {
-    transform: scale(1.3);
+    transform: scale(1.3) rotateY(180deg);
     z-index: 2;
 }
 
@@ -116,7 +117,7 @@ body {
     }
 
 #sw7:hover, #sw8:hover, #sw9:hover {
-    transform: scale(1.3);
+    transform: scale(1.3) rotateY(180deg);
     z-index: 2;
 }
 
@@ -148,7 +149,7 @@ body {
     }
 
 #zsivany:hover, #solo:hover {
-    transform: scale(1.3);
+    transform: scale(1.3) rotateY(180deg);
     z-index: 2;
 }
 
