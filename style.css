@@ -88,6 +88,7 @@ body {
 }
 
 .button {
+    transform: translateX(10px);
     font-family: "Montserrat", sans-serif;
     background-color: black;
     margin: 5px;
@@ -107,6 +108,7 @@ body {
 }
 
 .select {
+    transform: translateX(10px);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
