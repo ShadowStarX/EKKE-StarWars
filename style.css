@@ -14,22 +14,44 @@ body {
     font-family: "Montserrat", sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 3px;
+    color: rgb(209, 178, 1);
+    margin: auto;
+    width: 75%;
+    padding: 10px;
 }
 
-/*
 .card .release {
-    
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(209, 178, 1);
+    margin: auto;
+    width: 10%;
+    padding: 10px;
 }
 
 .card .description {
-
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05rem;
+    color: rgba(209, 178, 1, 0.842);
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
 }
 
 .card .note {
-
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05rem;
+    color: rgba(209, 178, 1, 0.747);
+    line-height: 1.5rem;
+    margin: auto;
+    width: 80%;
+    text-align: justify;
 }
-*/
 
 .container {
     width: 90%;
