@@ -1,19 +1,29 @@
 body {
     background-color: #3a3a3a;
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: rgb(206, 205, 205);
 }
 
-.title {
-    background-color: rgb(206, 205, 205);
-    padding: 0 10px;
-    font-size: 32px;
-    font-weight: bold;
-    top: 10%;
-    left: 50px;
-    opacity: 0;
-    transition: 1s all ease-in-out;
+.card .title {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
+/*
+.card .release {
+    
+}
+
+.card .description {
+
+}
+
+.card .note {
+
+}
+*/
 
 .container {
     width: 90%;

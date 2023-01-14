@@ -12,30 +12,33 @@
     <!-- FEJLÉC  -->
     <div class="container" id="header">
         <div id="prev_page">
-            <button onclick="PrevPage()">Előző</button>
+            <button>Előző</button>
         </div>
-        <select id="jump_page" name="jump" onchange="SelectedPage()">
-            <option value="default" selected="selected">--Ugrás másik oldalra--</option>
-            <option value="original">Eredeti trilógia</option>
-            <option value="prequel">Előzménytrilógia</option>
-            <option value="sequel">Folytatástrilógia</option>
-            <option value="spinoff">Spinoffok</option>
-            <option value="mandalorian">A mandalori</option>
-        </select>
+        <div id="jump_page">
+            <select name="jump">
+                <option value="default" selected="selected">--Ugrás másik oldalra--</option>
+                <option value="original">Eredeti trilógia</option>
+                <option value="prequel">Előzménytrilógia</option>
+                <option value="sequel">Folytatástrilógia</option>
+                <option value="spinoff">Spinoffok</option>
+                <option value="mandalorian">A mandalori</option>
+            </select>
+        </div>
         <div id="next_page">
-            <button onclick="NextPage()">Következő</button>
+            <button>Következő</button>
         </div>
     </div>
 
      <!-- EREDETI -->
     <div class="container" id="original">
+        <div class="slider-container"></div>
          <!-- SW4 -->
         <div class="card" id="card_sw4">
             <div class="front card_sides" id="sw4_front"> <!-- 2 classt is kap (1. front, 2. card_sides) -->
                 <img src="Resources/1_IV.jpg">
             </div>
             <div class="back card_sides" id="sw4_back">
-                <h2>Csillagok háborúja / Star Wars (Star Wars: Episode IV – A New Hope / Star Wars IV. rész: Egy új remény)</h2>
+                <h2 class ="title">Csillagok háborúja / Star Wars (Star Wars: Episode IV – A New Hope / Star Wars IV. rész: Egy új remény)</h2>
                 <p class="release">
                     1977
                 </p>
@@ -53,7 +56,7 @@
                 <img src="Resources/2_V.jpg">
             </div>
             <div div class="back card_sides" id="sw5_back">
-                <h2>A Birodalom visszavág / The Empire Strikes Back (Star Wars: Episode V)</h2>
+                <h2 class ="title">A Birodalom visszavág / The Empire Strikes Back (Star Wars: Episode V)</h2>
                 <p class="release">
                     1980
                 </p>
@@ -71,7 +74,7 @@
                 <img src="Resources/3_VI.jpg">
             </div>
             <div div class="back card_sides" id="sw6_back">
-                <h2>A Jedi visszatér / Return of the Jedi (Star Wars: Episode VI)</h2>
+                <h2 class ="title">A Jedi visszatér / Return of the Jedi (Star Wars: Episode VI)</h2>
                 <p class="release">
                     1983
                 </p>
@@ -93,7 +96,7 @@
                 <img src="Resources/4_I.jpg">
             </div>
             <div div class="back card_sides" id="sw1_back">
-                <h2>Baljós árnyak / The Phantom Menace (Star Wars: Episode I)</h2>
+                <h2 class ="title">Baljós árnyak / The Phantom Menace (Star Wars: Episode I)</h2>
                 <p class="release">
                     1999
                 </p>
@@ -111,7 +114,7 @@
                 <img src="Resources/5_II.jpg">
             </div>
             <div div class="back card_sides" id="sw2_back">
-                <h2>A klónok támadása (Star Wars: Episode II – Attack of the Clones)</h2>
+                <h2 class ="title">A klónok támadása (Star Wars: Episode II – Attack of the Clones)</h2>
                 <p class="release">
                     2002
                 </p>
@@ -129,7 +132,7 @@
                 <img src="Resources/6_III.jpg">
             </div>
             <div div class="back card_sides" id="sw3_back">
-                <h2>A Sith-ek bosszúja (Star Wars: Episode III – Revenge of the Sith)</h2>
+                <h2 class ="title">A Sith-ek bosszúja (Star Wars: Episode III – Revenge of the Sith)</h2>
                 <p class="release">
                     2005
                 </p>
@@ -152,7 +155,7 @@
                 <img src="Resources/7_VII.jpg">
             </div>
             <div div class="back card_sides" id="sw7_back">
-                <h2>Az ébredő erő (Star Wars: Episode VII – The Force Awakens)</h2>
+                <h2 class ="title">Az ébredő erő (Star Wars: Episode VII – The Force Awakens)</h2>
                 <p class="release">
                     2015
                 </p>
@@ -170,7 +173,7 @@
                 <img src="Resources/9_VIII.jpg">
             </div>
             <div div class="back card_sides" id="sw8_back">
-                <h2>Az utolsó Jedi (Star Wars: Episode VIII – The Last Jedi)</h2>
+                <h2 class ="title">Az utolsó Jedi (Star Wars: Episode VIII – The Last Jedi)</h2>
                 <p class="release">
                     2017
                 </p>
@@ -188,7 +191,7 @@
                 <img src="Resources/11_IX.jpg">
             </div>
             <div div class="back card_sides" id="sw9_back">
-                <h2>Skywalker kora (Star Wars: Episode IX – The Rise of Skywalker)</h2>
+                <h2 class ="title">Skywalker kora (Star Wars: Episode IX – The Rise of Skywalker)</h2>
                 <p class="release">
                     2019
                 </p>
@@ -210,7 +213,7 @@
                 <img src="Resources/8_R.jpg">
             </div>
             <div div class="back card_sides" id="zsivany_back">
-                <h2>Zsivány egyes - Egy Csillagok háborúja történet (The Rogue One - A Star Wars Story) </h2>
+                <h2 class ="title">Zsivány egyes - Egy Csillagok háborúja történet (The Rogue One - A Star Wars Story) </h2>
                 <p class="release">
                     2016
                 </p>
@@ -228,7 +231,7 @@
                 <img src="Resources/10_S.jpg">
             </div>
             <div div class="back card_sides" id="solo_back">
-                <h2>Solo - Egy Csillagok háborúja történet (Solo - A Star Wars Story)</h2>
+                <h2 class ="title">Solo - Egy Csillagok háborúja történet (Solo - A Star Wars Story)</h2>
                 <p class="release">
                     2018
                 </p>
@@ -249,7 +252,7 @@
                 <img src="Resources/12_M.jpg">
             </div>
             <div div class="back card_sides" id="mand_back">
-                <h2>A mandalóri [sorozat] - (The Mandalorian [TV series]) </h2>
+                <h2 class ="title">A mandalóri [sorozat] - (The Mandalorian [TV series]) </h2>
                 <p class="release">
                     2019-
                 </p>
