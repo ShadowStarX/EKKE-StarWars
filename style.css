@@ -15,37 +15,38 @@ body {
     transition: 1s all ease-in-out;
 }
 
-
 .container {
     width: 90%;
     padding: 20px;
-    margin: 100px auto;	 
+    margin: 100px auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
 
 .card {
     width: 520px;
     height: 800px;
-    margin: 0 80px;
+    margin: 0 10px;
     perspective: 1000px;
 }
 
-
-
 .card_sides {
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
-
 .front, .back {
-    margin: 0 80px; 
+    margin: 0 10px; 
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
     transition: transform 1500ms;   
     transform-style: preserve-3d;
@@ -53,22 +54,18 @@ backface-visibility: hidden;
     border-radius: 20px;
 }
 
-
 .front img {
-    width: 520px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
     display: block;
 }
 
-
-
 .back {
     transform: rotateY(180deg);
     cursor: pointer;
 }
-
 
 .card:hover .front {
     transform: rotateY(180deg);
@@ -79,6 +76,3 @@ backface-visibility: hidden;
     transform: rotateY(360deg);
     cursor: pointer;
 }
-
-
-
