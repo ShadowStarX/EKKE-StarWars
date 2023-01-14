@@ -2,6 +2,12 @@ body {
     background-color: #2b2a2a;
     font-family: "Raleway", sans-serif;
     color: rgb(206, 205, 205);
+
+    background-image: url('Resources/red.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .card .title {
@@ -60,7 +66,7 @@ body {
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
     transition: transform 1500ms;   
     transform-style: preserve-3d;
-    background-color: #3f3f3f;
+    background-color: black;
     border-radius: 20px;
 }
 
@@ -90,7 +96,7 @@ body {
 .button {
     transform: translate(10px, 60px);
     font-family: "Montserrat", sans-serif;
-    background-color: black;
+    background-color: #5e0000;
     margin: 5px;
     letter-spacing: 1px;
     color: white;
@@ -103,7 +109,7 @@ body {
 }
 
 .button:hover {
-    background-color: gray;
+    background-color: #ff3333;
     color: white;
 }
 
@@ -112,7 +118,7 @@ body {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: black;
+    background-color: #5e0000;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -124,6 +130,6 @@ body {
 }
 
 .select:hover {
-    background-color: gray;
+    background-color: #ff3333;
     color: white;
 }
