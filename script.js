@@ -54,11 +54,6 @@ function SelectedPage ()
             document.getElementById('mandalorian').style.display='flex';
         break;
         default:
-            document.getElementById('original').style.display='flex';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
         break;
       }
 }
