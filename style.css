@@ -88,8 +88,10 @@ body {
 }
 
 .button {
+    font-family: "Montserrat", sans-serif;
     background-color: black;
     margin: 5px;
+    letter-spacing: 1px;
     color: white;
     padding: 14px 28px;
     font-size: 16px;
@@ -105,6 +107,9 @@ body {
 }
 
 .select {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     background-color: black;
     color: white;
     padding: 12px;
