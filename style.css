@@ -86,3 +86,37 @@ body {
     transform: rotateY(360deg);
     cursor: pointer;
 }
+
+.button {
+    background-color: black;
+    margin: 5px;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.select {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.select:hover {
+    background-color: gray;
+    color: white;
+}
