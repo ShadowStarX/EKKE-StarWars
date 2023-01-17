@@ -104,7 +104,27 @@
                     <button class="star">&#9734;</button>   
                 </div>
             </div>
-        </div>             
+        </div>
+        <script>  
+            const original_cards = document.querySelectorAll('.card');
+    
+            for(original_card of original_cards){
+            const allStars = original_card.querySelectorAll('.star_rating .star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })
+    
+            }
+        </script>             
     </div>
 
     <!-- ELŐZMÉNY -->
@@ -184,6 +204,26 @@
                 </div>
             </div>
         </div>
+        <script>  
+            const prequel_cards = document.querySelectorAll('.card');
+    
+            for(prequel_card of prequel_cards){
+            const allStars = prequel_card.querySelectorAll('.star_rating .star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
+
     </div>
         
 
@@ -264,6 +304,25 @@
                 </div>
             </div>
         </div>      
+        <script>  
+            const sequel_cards = document.querySelectorAll('.card');
+    
+            for(sequel_card of sequel_cards){
+            const allStars = sequel_card.querySelectorAll('.star_rating .star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>    
     </div>
 
      <!-- SPINOFF -->
@@ -317,7 +376,26 @@
                     <button class="star">&#9734;</button>   
                 </div>
             </div>
-        </div>      
+        </div>    
+        <script>  
+            const spinoff_cards = document.querySelectorAll('.card');
+    
+            for(spinoff_card of spinoff_cards){
+            const allStars = spinoff_card.querySelectorAll('.star_rating .star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
     </div>
 
     <!-- MANDALORI -->
@@ -345,7 +423,26 @@
                     <button class="star">&#9734;</button>   
                 </div>
             </div>
-        </div>       
+        </div> 
+        <script>  
+            const mandalori_cards = document.querySelectorAll('.card');
+    
+            for(mandalori_card of mandalori_cards){
+            const allStars = mandalori_card.querySelectorAll('.star_rating .star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>         
     </div>
 </body>
 </html>
