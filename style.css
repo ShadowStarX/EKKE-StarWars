@@ -155,17 +155,3 @@ body {
     background-color: #ff3333;
     color: white;
 }
-
-.star_rating{
-    user-select: none;
-    text-align: center;
-}
-.star{
-    font-size: 2rem;
-    color: yellow;
-    background-color: unset;
-    border: none;
-}
-.star:hover{
-    cursor: pointer;
-}
