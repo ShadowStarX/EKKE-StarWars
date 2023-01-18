@@ -160,6 +160,16 @@ body {
     user-select: none;
     text-align: center;
 }
+.star_rating p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05rem;
+    color: rgba(209, 178, 1, 0.842);
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
 .star{
     font-size: 2rem;
     color: yellow;
