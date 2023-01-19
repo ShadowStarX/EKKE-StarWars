@@ -39,5 +39,310 @@
             <button class="button" onclick="NextPage()">Következő</button>
         </div>
     </div>
+         <!-- I-IV -->
+         <div class="container" id="original">
+            <div class="slider-container"></div>
+             <!-- GOTI -->
+            <div class="card" id="card_goti">
+                <div class="front card_sides" id="goti_front">
+                    <img src="Resources/GOTI.jpg">
+                </div>
+                <div class="back card_sides" id="goti_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>       
+             <!-- GOTII -->
+            <div class="card" id="card_gotii">
+                <div class="front card_sides" id="gotii_front">
+                    <img src="Resources/GOTII.jpg">
+                </div>
+                <div div class="back card_sides" id="gotii_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>         
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt a évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button> 
+                    </div>
+                </div>
+            </div> 
+             <!-- GOTIII -->    
+            <div class="card" id="card_gotiii">
+                <div class="front card_sides" id="gotiii_front">
+                    <img src="Resources/GOTIII.jpg">
+                </div>
+                <div div class="back card_sides" id="gotiii_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>        
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt a évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button> 
+                    </div>
+                </div>
+            </div>
+            <!-- GOTIV -->    
+            <div class="card" id="card_gotiv">
+                <div class="front card_sides" id="gotiv_front">
+                    <img src="Resources/GOTIV.jpg">
+                </div>
+                <div div class="back card_sides" id="gotiv_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>         
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt a évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button> 
+                    </div>
+                </div>
+            </div>
+            <script>  
+                const I_IV_cards = document.querySelectorAll('.card');
+        
+                for(I_IV_card of I_IV_cards){
+                const allStars = I_IV_card.querySelectorAll('.star_rating .star');  
+                allStars.forEach((star, i) => {
+                    star.onclick = function () {
+                        let current_star_level = i + 1;    
+                        allStars.forEach((star, j) => {
+                            if (current_star_level >= j + 1) {
+                                star.innerHTML = '&#9733';
+                            } else {
+                                star.innerHTML = '&#9734';
+                            }
+                        })
+                    }
+                })
+        
+                }
+            </script>             
+        </div>
+    
+        <!-- V-VIII -->
+        <div class="container" id="prequel"> 
+             <!-- GOTV -->   
+            <div class="card" id="card_gotv">
+                <div class="front card_sides" id="gotv_front">
+                    <img src="Resources/GOTV.jpg">
+                </div>
+                <div div class="back card_sides" id="gotv_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>      
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>
+            <!-- GOTVI -->   
+            <div class="card" id="card_gotvi">
+                <div class="front card_sides" id="gotvi_front">
+                    <img src="Resources/GOTVI.jpg">
+                </div>
+                <div div class="back card_sides" id="gotvi_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>      
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>
+            <!-- GOTVII -->   
+            <div class="card" id="card_gotvii">
+                <div class="front card_sides" id="gotvii_front">
+                    <img src="Resources/GOTVII.jpg">
+                </div>
+                <div div class="back card_sides" id="gotvii_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>      
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>
+            <!-- GOTVIII -->   
+            <div class="card" id="card_gotviii">
+                <div class="front card_sides" id="gotviii_front">
+                    <img src="Resources/GOTVIII.jpg">
+                </div>
+                <div div class="back card_sides" id="gotviii_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>     
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>
+            <script>  
+                const V_VIII_cards = document.querySelectorAll('.card');
+        
+                for(V_VIII_card of V_VIII_cards){
+                const allStars = V_VIII_card.querySelectorAll('.star_rating .star');  
+                allStars.forEach((star, i) => {
+                    star.onclick = function () {
+                        let current_star_level = i + 1;    
+                        allStars.forEach((star, j) => {
+                            if (current_star_level >= j + 1) {
+                                star.innerHTML = '&#9733';
+                            } else {
+                                star.innerHTML = '&#9734';
+                            }
+                        })
+                    }
+                })   
+                }
+            </script>             
+    
+        </div>
+    
+         <!-- SPINOFF -->
+        <div class="container" id="spinoff">
+            <!-- HD --> 
+            <div class="card" id="card_hd">
+                <div class="front card_sides" id="hd_front">
+                    <img src="Resources/HD.jpg">
+                </div>
+                <div div class="back card_sides" id="hd_back">
+                    <h2 class ="title">Cím</h2>
+                    <p class="release">
+                        dátum
+                    </p>
+                    <p class="description">
+                        leírás
+                    </p>
+                    <p class="note">
+                        megjegyzések
+                    </p>             
+                    <div class="star_rating">
+                        <p>Mennyire értékelné ezt az évadot?</p>
+                        <button class="star">&#9734;</button>    
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                        <button class="star">&#9734;</button>   
+                    </div>
+                </div>
+            </div>   
+            <script>  
+                const spinoff_cards = document.querySelectorAll('.card');
+        
+                for(spinoff_card of spinoff_cards){
+                const allStars = spinoff_card.querySelectorAll('.star_rating .star');  
+                allStars.forEach((star, i) => {
+                    star.onclick = function () {
+                        let current_star_level = i + 1;    
+                        allStars.forEach((star, j) => {
+                            if (current_star_level >= j + 1) {
+                                star.innerHTML = '&#9733';
+                            } else {
+                                star.innerHTML = '&#9734';
+                            }
+                        })
+                    }
+                })   
+                }
+            </script>             
+        </div>
 </body>
 </html>
