@@ -3,7 +3,7 @@ body {
     font-family: "Raleway", sans-serif;
     color: rgb(206, 205, 205);
 
-    background-image: url('Resources/red.jpg');
+    background-image: url('StarWars/Resources/red.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
