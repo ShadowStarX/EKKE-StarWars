@@ -1,11 +1,16 @@
-.sw_body {
-    background-color: #2b2a2a;
-
-    background-image: url('StarWars/Resources/red.jpg');
+body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.sw_body{
+    background-image: url('StarWars/Resources/red.jpg');
+}
+
+.got_body{
+    background-image: url('GOT/Resources/background.jpg');
 }
 
 .card .title {
@@ -23,6 +28,10 @@
     color: rgb(209, 178, 1);
 }
 
+.card .got_title{
+    color: rgb(185, 84, 12);
+}
+
 .card .release {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -34,6 +43,10 @@
 
 .card .sw_release{
     color: rgb(209, 178, 1);
+}
+
+.card .got_release{
+    color: rgb(172, 79, 13);
 }
 
 .card .description {
@@ -48,6 +61,10 @@
 
 .card .sw_description{
     color: rgba(209, 178, 1, 0.842);
+}
+
+.card .got_description{
+    color: rgb(126, 58, 9);
 }
 
 .card .note {
@@ -125,13 +142,11 @@
     cursor: pointer;
 }
 
-.sw_button {
+.button {
     transform: translate(10px, 60px);
     font-family: "Montserrat", sans-serif;
-    background-color: #5e0000;
     margin: 5px;
     letter-spacing: 1px;
-    color: white;
     padding: 14px 28px;
     font-size: 16px;
     border: none;
@@ -140,18 +155,11 @@
     border-radius: 4px;
 }
 
-.sw_button:hover {
-    background-color: #ff3333;
-    color: white;
-}
-
-.sw_select {
+.select {
     transform: translate(10px, 60px);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: #5e0000;
-    color: white;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -161,9 +169,24 @@
     text-align: center;
 }
 
-.sw_select:hover {
+.sw_button,.sw_select{
+    background-color: #5e0000;
+    color: white;
+}
+
+.sw_button:hover,.sw_select:hover {
     background-color: #ff3333;
     color: white;
+}
+
+.got_button, .got_select{
+    background-color: rgb(128,128,128);
+    color: rgb(0, 44, 58);
+}
+
+.got_button:hover,.got_select:hover{
+    background-color: rgb(169,169,169);
+    color: rgb(42, 78, 108);
 }
 
 .star_rating{
@@ -183,6 +206,10 @@
 
 .swstar{
     color: rgba(209, 178, 1, 0.842);
+}
+
+.gotstar{
+    color: rgba(94, 43, 7, 0.966);
 }
 
 .star{
