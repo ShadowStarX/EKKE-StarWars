@@ -31,8 +31,9 @@
         </div>
         <select class="got_select select" id="jump_page" name="jump" onchange="SelectedPage()">
             <option value="default" selected="selected">--Ugrás másik oldalra--</option>
-            <option value="I-IV">I-IV</option>
-            <option value="V-VIII">V-VIII</option>
+            <option value="I-IV">I-III</option>
+            <option value="V-VIII">IV-VI</option>
+            <option value="V-VIII">VII-VIII</option>
             <option value="spinoff">Spinoff</option>
         </select>
         <div id="next_page">
@@ -40,7 +41,7 @@
         </div>
     </div>
          <!-- I-IV -->
-         <div class="container" id="I-IV">
+         <div class="container" id="I-III">
             <div class="slider-container"></div>
              <!-- GOTI -->
             <div class="card" id="card_goti">
@@ -111,6 +112,30 @@
                     </div>
                 </div>
             </div>
+            <script>  
+                const I_III_cards = document.querySelectorAll('.card');
+        
+                for(I_III_card of I_III_cards){
+                const allStars = I_III_card.querySelectorAll('.star_rating .star');  
+                allStars.forEach((star, i) => {
+                    star.onclick = function () {
+                        let current_star_level = i + 1;    
+                        allStars.forEach((star, j) => {
+                            if (current_star_level >= j + 1) {
+                                star.innerHTML = '&#9733';
+                            } else {
+                                star.innerHTML = '&#9734';
+                            }
+                        })
+                    }
+                })
+        
+                }
+            </script>             
+        </div>
+    
+        <!-- V-VIII -->
+        <div class="container" id="IV-VI"> 
             <!-- GOTIV -->    
             <div class="card" id="card_gotiv">
                 <div class="front card_sides" id="gotiv_front">
@@ -134,30 +159,7 @@
                     </div>
                 </div>
             </div>
-            <script>  
-                const I_IV_cards = document.querySelectorAll('.card');
-        
-                for(I_IV_card of I_IV_cards){
-                const allStars = I_IV_card.querySelectorAll('.star_rating .star');  
-                allStars.forEach((star, i) => {
-                    star.onclick = function () {
-                        let current_star_level = i + 1;    
-                        allStars.forEach((star, j) => {
-                            if (current_star_level >= j + 1) {
-                                star.innerHTML = '&#9733';
-                            } else {
-                                star.innerHTML = '&#9734';
-                            }
-                        })
-                    }
-                })
-        
-                }
-            </script>             
-        </div>
-    
-        <!-- V-VIII -->
-        <div class="container" id="V-VIII"> 
+
              <!-- GOTV -->   
             <div class="card" id="card_gotv">
                 <div class="front card_sides" id="gotv_front">
@@ -205,6 +207,29 @@
                     </div>
                 </div>
             </div>
+            <script>  
+                const IV_VI_cards = document.querySelectorAll('.card');
+        
+                for(IV_VI_card of IV_VI_cards){
+                const allStars = IV_VI_card.querySelectorAll('.star_rating .star');  
+                allStars.forEach((star, i) => {
+                    star.onclick = function () {
+                        let current_star_level = i + 1;    
+                        allStars.forEach((star, j) => {
+                            if (current_star_level >= j + 1) {
+                                star.innerHTML = '&#9733';
+                            } else {
+                                star.innerHTML = '&#9734';
+                            }
+                        })
+                    }
+                })   
+                }
+            </script>             
+    
+        </div>
+    
+        <div class="container" id="VII-VIII">
             <!-- GOTVII -->   
             <div class="card" id="card_gotvii">
                 <div class="front card_sides" id="gotvii_front">
@@ -252,10 +277,10 @@
                 </div>
             </div>
             <script>  
-                const V_VIII_cards = document.querySelectorAll('.card');
+                const VII_VIII_cards = document.querySelectorAll('.card');
         
-                for(V_VIII_card of V_VIII_cards){
-                const allStars = V_VIII_card.querySelectorAll('.star_rating .star');  
+                for(VII_VIII_card of VII_VIII_cards){
+                const allStars = VII_VIII_card.querySelectorAll('.star_rating .star');  
                 allStars.forEach((star, i) => {
                     star.onclick = function () {
                         let current_star_level = i + 1;    
@@ -270,9 +295,7 @@
                 })   
                 }
             </script>             
-    
         </div>
-    
          <!-- SPINOFF -->
         <div class="container" id="spinoff">
             <!-- HD --> 
