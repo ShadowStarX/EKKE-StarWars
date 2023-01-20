@@ -29,7 +29,7 @@ body {
 }
 
 .card .got_title{
-    color: rgb(185, 84, 12);
+    color: #2A4E6C;
 }
 
 .card .release {
@@ -46,7 +46,7 @@ body {
 }
 
 .card .got_release{
-    color: rgb(172, 79, 13);
+    color: #192F41;
 }
 
 .card .description {
@@ -64,7 +64,7 @@ body {
 }
 
 .card .got_description{
-    color: rgb(126, 58, 9);
+    color: #223E56;
 }
 
 .card .note {
@@ -209,7 +209,7 @@ body {
 }
 
 .gotstar{
-    color: rgba(94, 43, 7, 0.966);
+    color: #223E56;
 }
 
 .star{
