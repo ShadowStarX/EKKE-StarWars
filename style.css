@@ -1,7 +1,5 @@
-body {
+.sw_body {
     background-color: #2b2a2a;
-    font-family: "Raleway", sans-serif;
-    color: rgb(206, 205, 205);
 
     background-image: url('StarWars/Resources/red.jpg');
     background-size: cover;
@@ -16,26 +14,31 @@ body {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    color: rgb(209, 178, 1);
     margin: auto;
     width: 75%;
     padding: 10px;
+}
+
+.card .sw_title{
+    color: rgb(209, 178, 1);
 }
 
 .card .release {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    color: rgb(209, 178, 1);
     margin: auto;
     width: 10%;
     padding: 10px;
 }
 
+.card .sw_release{
+    color: rgb(209, 178, 1);
+}
+
 .card .description {
     font-family: "Montserrat", sans-serif;
     font-size: 1.05rem;
-    color: rgba(209, 178, 1, 0.842);
     text-align: justify;
     line-height: 1.5rem;
     margin: auto;
@@ -43,14 +46,21 @@ body {
     padding: 10px;
 }
 
+.card .sw_description{
+    color: rgba(209, 178, 1, 0.842);
+}
+
 .card .note {
     font-family: "Montserrat", sans-serif;
     font-size: 1.05rem;
-    color: rgba(209, 178, 1, 0.747);
     line-height: 1.5rem;
     margin: auto;
     width: 80%;
     text-align: justify;
+}
+
+.card .sw_note{
+    color: rgba(209, 178, 1, 0.747);
 }
 
 .container {
@@ -115,7 +125,7 @@ body {
     cursor: pointer;
 }
 
-.button {
+.sw_button {
     transform: translate(10px, 60px);
     font-family: "Montserrat", sans-serif;
     background-color: #5e0000;
@@ -130,12 +140,12 @@ body {
     border-radius: 4px;
 }
 
-.button:hover {
+.sw_button:hover {
     background-color: #ff3333;
     color: white;
 }
 
-.select {
+.sw_select {
     transform: translate(10px, 60px);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -151,7 +161,7 @@ body {
     text-align: center;
 }
 
-.select:hover {
+.sw_select:hover {
     background-color: #ff3333;
     color: white;
 }
@@ -160,22 +170,28 @@ body {
     user-select: none;
     text-align: center;
 }
+
 .star_rating p{
     font-family: "Montserrat", sans-serif;
     font-size: 1.05rem;
-    color: rgba(209, 178, 1, 0.842);
     text-align: justify;
     line-height: 1.5rem;
     margin: auto;
     width: 50%;
     padding: 10px;
 }
+
+.swstar{
+    color: rgba(209, 178, 1, 0.842);
+}
+
 .star{
     font-size: 2rem;
     color: yellow;
     background-color: unset;
     border: none;
 }
+
 .star:hover{
     cursor: pointer;
 }
