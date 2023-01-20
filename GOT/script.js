@@ -1,3 +1,9 @@
+function StartPage ()
+{
+    document.getElementById('I-IV').style.display='flex';
+    document.getElementById('V-VIII').style.display='none';
+    document.getElementById('spinoff').style.display='none';
+}
 function SelectedPage ()
 {
     var x = document.getElementById('jump_page').value;
