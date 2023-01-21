@@ -238,6 +238,10 @@ body {
     color: aliceblue;
 }
 
+.atla_star{
+    color: #4b1013;
+}
+
 :root {
     --primary-color: rgb(0, 0, 0);
     --overlay-color: rgba(0, 0, 0, 0.541);
