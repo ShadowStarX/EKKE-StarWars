@@ -33,7 +33,7 @@ body {
 }
 
 .card .got_title{
-    color: #2A4E6C;
+    color: #F0F8FF;
 }
 
 .card .release {
@@ -50,7 +50,7 @@ body {
 }
 
 .card .got_release{
-    color: #192F41;
+    color: #E6EEF5;
 }
 
 .card .description {
@@ -68,7 +68,7 @@ body {
 }
 
 .card .got_description{
-    color: #223E56;
+    color: #DCE4EB;
 }
 
 .card .note {
@@ -217,7 +217,7 @@ body {
 }
 
 .gotstar{
-    color: #223E56;
+    color: #D2DAE1;
 }
 
 .star{
