@@ -231,6 +231,17 @@ body {
     cursor: pointer;
 }
 
+.got_star{
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: unset;
+    border: none;
+}
+
+.got_star:hover{
+    cursor: pointer;
+}
+
 :root {
     --primary-color: rgb(0, 0, 0);
     --overlay-color: rgba(0, 0, 0, 0.541);
