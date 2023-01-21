@@ -220,14 +220,14 @@ body {
     color: #D2DAE1;
 }
 
-.star{
+.sw_star{
     font-size: 2rem;
     color: yellow;
     background-color: unset;
     border: none;
 }
 
-.star:hover{
+.sw_star:hover{
     cursor: pointer;
 }
 
