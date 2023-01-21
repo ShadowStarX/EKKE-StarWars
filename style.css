@@ -13,6 +13,10 @@ body {
     background-image: url('GOT/Resources/background.jpg');
 }
 
+.atla_body{
+    background-color: url('ATLA/Resources/map.jpg');
+}
+
 .card .title {
     font-family: "Montserrat", sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
