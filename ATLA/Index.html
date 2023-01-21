@@ -105,6 +105,25 @@
                 </div>
             </div>
         </div>
+        <script>  
+            const aang_cards = document.querySelectorAll('.card');
+    
+            for(aang_card of aang_cards){
+            const allStars = aang_card.querySelectorAll('.star_rating .atla_star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
     </div>
     <div class="container" id="korra">
         <div class="card" id="card_air">
@@ -203,6 +222,25 @@
                 </div>
             </div>
         </div>
+        <script>  
+            const korra_cards = document.querySelectorAll('.card');
+    
+            for(korra_card of korra_cards){
+            const allStars = korra_card.querySelectorAll('.star_rating .atla_star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
     </div>
     <div class="container" id="books">
         <div class="card" id="card_rise">
@@ -277,6 +315,25 @@
                 </div>
             </div>
         </div>
+        <script>  
+            const books_cards = document.querySelectorAll('.card');
+    
+            for(books_card of books_cards){
+            const allStars = books_card.querySelectorAll('.star_rating .atla_star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
     </div>
     <div class="container" id="badmovie">
         <div class="card" id="card_movie">
@@ -303,6 +360,26 @@
                 </div>
             </div>
         </div>
-    </dic>
+        <script>  
+            const badmovie_cards = document.querySelectorAll('.card');
+    
+            for(badmovie_card of badmovie_cards){
+            const allStars = badmovie_card.querySelectorAll('.star_rating .atla_star');  
+            allStars.forEach((star, i) => {
+                star.onclick = function () {
+                    let current_star_level = i + 1;    
+                    allStars.forEach((star, j) => {
+                        if (current_star_level >= j + 1) {
+                            star.innerHTML = '&#9733';
+                        } else {
+                            star.innerHTML = '&#9734';
+                        }
+                    })
+                }
+            })   
+            }
+        </script>             
+
+    </div>
 </body>
 </html>
