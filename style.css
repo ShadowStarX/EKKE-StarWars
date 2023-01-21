@@ -84,6 +84,10 @@ body {
     color: rgba(209, 178, 1, 0.747);
 }
 
+.atla_body .container .card div[class='back card_sides'] {
+    background-color: bisque;
+}
+
 .container {
     width: 70%;
     padding: 20px;
