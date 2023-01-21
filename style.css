@@ -220,26 +220,22 @@ body {
     color: #D2DAE1;
 }
 
-.sw_star{
+.star{
     font-size: 2rem;
-    color: yellow;
     background-color: unset;
     border: none;
 }
 
-.sw_star:hover{
+.star:hover{
     cursor: pointer;
+}
+
+.sw_star{
+    color: yellow;
 }
 
 .got_star{
-    font-size: 2rem;
     color: aliceblue;
-    background-color: unset;
-    border: none;
-}
-
-.got_star:hover{
-    cursor: pointer;
 }
 
 :root {
