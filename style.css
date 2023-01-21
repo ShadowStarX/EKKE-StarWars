@@ -14,7 +14,7 @@ body {
 }
 
 .atla_body{
-    background-color: url('ATLA/Resources/map.jpg');
+    background-image: url('ATLA/Resources/map.jpg');
 }
 
 .card .title {
