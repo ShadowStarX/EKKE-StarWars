@@ -1,57 +1,45 @@
 function StartPage ()
 {
-    document.getElementById('original').style.display='flex';
-    document.getElementById('prequel').style.display='none';
-    document.getElementById('sequel').style.display='none';
-    document.getElementById('spinoff').style.display='none';
-    document.getElementById('mandalorian').style.display='none';
+    document.getElementById('aang').style.display='flex';
+    document.getElementById('korra').style.display='none';
+    document.getElementById('books').style.display='none';
+    document.getElementById('badmovie').style.display='none';
+    document.getElementById('badmovie').style.display='none';
 }
 function PrevPage ()
 {
     var x = document.getElementById('jump_page').value;
     switch(x) {
-        case 'original':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='flex';
-            document.getElementById('jump_page').value = 'mandalorian'
+        case 'aang':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='flex';
+            document.getElementById('jump_page').value = 'badmovie'
         break;
-        case 'prequel':
-            document.getElementById('original').style.display='flex';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'original'
+        case 'korra':
+            document.getElementById('aang').style.display='flex';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'aang'
         break;
-        case 'sequel':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='flex';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'prequel'
+        case 'books':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='flex';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'korra'
         break;
-        case 'spinoff':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='flex';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'sequel'
-        break;
-        case 'mandalorian':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='flex';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'spinoff'
+        case 'badmovie':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='flex';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'books'
         break;
         default:
-            document.getElementById('jump_page').value = 'original'
+            document.getElementById('jump_page').value = 'aang'
         break;
       }
 
@@ -60,48 +48,36 @@ function NextPage ()
 {
     var x = document.getElementById('jump_page').value; 
     switch(x) {
-        case 'original':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='flex';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'prequel'
+        case 'aang':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='flex';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'korra'
         break;
-        case 'prequel':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='flex';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'sequel'
+        case 'korra':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='flex';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'books'
         break;
-        case 'sequel':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='flex';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'spinoff'
+        case 'books':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='flex';
+            document.getElementById('jump_page').value = 'badmovie'
         break;
-        case 'spinoff':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='flex';
-            document.getElementById('jump_page').value = 'mandalorian'
-        break;
-        case 'mandalorian':
-            document.getElementById('original').style.display='flex';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
-            document.getElementById('jump_page').value = 'original'
+        case 'badmovie':
+            document.getElementById('aang').style.display='flex';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
+            document.getElementById('jump_page').value = 'aang'
         break;
         default:
-            document.getElementById('jump_page').value = 'original'
+            document.getElementById('jump_page').value = 'aang'
         break;
       }
 
@@ -110,43 +86,32 @@ function SelectedPage ()
 {
     var x = document.getElementById('jump_page').value;
     switch(x) {
-        case 'original':
-            document.getElementById('original').style.display='flex';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
+        case 'aang':
+            document.getElementById('aang').style.display='flex';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
         break;
-        case 'prequel':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='flex';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
+        case 'korra':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='flex';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='none';
         break;
-        case 'sequel':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='flex';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='none';
+        case 'books':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='flex';
+            document.getElementById('badmovie').style.display='none';
         break;
-        case 'spinoff':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='flex';
-            document.getElementById('mandalorian').style.display='none';
-        break;
-        case 'mandalorian':
-            document.getElementById('original').style.display='none';
-            document.getElementById('prequel').style.display='none';
-            document.getElementById('sequel').style.display='none';
-            document.getElementById('spinoff').style.display='none';
-            document.getElementById('mandalorian').style.display='flex';
+        case 'badmovie':
+            document.getElementById('aang').style.display='none';
+            document.getElementById('korra').style.display='none';
+            document.getElementById('books').style.display='none';
+            document.getElementById('badmovie').style.display='flex';
         break;
         default:
-            //document.getElementById('jump_page').value = 'original'
+            //document.getElementById('jump_page').value = 'aang'
         break;
       }
 }
