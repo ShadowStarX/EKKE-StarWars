@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Star Wars</title>
+    <title>Funkcionális Specifikáció</title>
 </head>
 
 <body>
@@ -12,7 +12,8 @@
         <p>
             Egy olyan weblapot szeretnénk létrehozni, ami arra szolgál, hogy az emberek utána tudjanak nézni az egyes Star Wars trilógiáknak, 
             valamint azon belül a filmek/sorozatok rövid kedvcsinálóinak, illetve értékelni tudják őket. 
-            A filmek ennek köszönhetően kapnak egy átlagértékelést. 
+            A Star Wars franchise-n kívül a felhasználók megtekinthetik a Trónok harca, valamint Az utolsó léghajlító filmek/sorozatok/könyvek leírásait is. Értékelni ezeket is hasonlóan tudják.
+            Az oldalakhoz tartozik egy menü, ahol elérhetik a másik két oldalt.
             Ehhez HTML-t, CSS-t valamint Javascriptet fogunk használni, hogy a weboldalt működésre bírjuk
         </p>
 
@@ -21,6 +22,7 @@
             Napjainkban is fontos az emberek számára egy kedvcsináló, ahol tájékozódnak az adott film vagy sorozatról mielőtt megnéznék.
             Annak érdekében, hogy ezt ne a megszokott módon tegyék, a weboldal letisztult külsőt és kártyákat tartalmaz, amik segítenek a kiválasztásban.
             Ezek mellett lehetőségük van értékelni a filmeket is, ezzel segítve a döntést másoknak, valamint a mi munkánkat.
+            A változatosság kedvéért több franchise-ból is válogathatnak a felhasználók.
         </p>
 
     <h2>Követelménylista</h2>
@@ -31,25 +33,29 @@
                 <li>Az egyszerre megjelenő filmek struktúrálása közös tulajdonságuk szerint, pl. az egy trilógiába tartozók egy lapon jelenjenek meg</li>
                 <li>Legyen lapozható JavaScript funkció segítségével</li>
                 <li>Az egyes filmek megjelenítése legyen érdekes/figyelemfelkeltő, forgatható kártyák által megvalósítva</li>
+                <li>Az oldalak legyenek elérhetőek egymásról, ez menüvel legyen kivitelezhető</li>
               </ul> 
         </p>
 
     <h2>Jelenlegi üzleti folyamatok modellje</h2>
         <p>
-            A felhasználó fellép a weblapra és legelőször a főoldalon találja magát, ahol az eredeti trilógia található.
+            A megrendelő nem foglalkozott még hasonló területtel, így az üzleti folyamatait csupán olyan mértékben érinti az általuk igényelt weboldal,
+            amelynek a szoftverkészítés és átadás szempontjából nincs jelentősége.
         </p>
 
     <h2>Igényelt üzleti folyamatok modellje</h2>
         <p>
-            A felhasználók válthatnak a trilógiák közt, valamint elolvashatják a rövid kedvcsinálót róluk, ha a kártyák felé viszik az egerüket, ugyanis az ekkor megfordul.
-            Ugyanitt értékelések adhatóak a filmeknek, az átlagok pedig szintén a kártykon lesznek megtalálhatóak.
+            A megrendelő olyan webes felületet szeretne biztosítani a felhasználók számára, ahol meghatározott franchise-ok (Star Wars, Trónok Harca, Az utolsó léghajlító)
+            filmjeiről és sorozatiról tájékozódhatnak, elolvashatják a rövid kedvcsinálót róluk, mindezt egyszerű, letisztult, de igényes és modern környezetben.
+            <br>Fontos követelmény, hogy a felhasználók értékelhessék is a filmeket, amely okot ad a felhasználóknak az oldalra való visszatérésre (a filmek és a sorozatok megtekintését követően is).
         </p>
     <h2>Forgatókönyv</h2>
         <p>
             Amikor a felhasználó először fellép az oldalra, az első (eredeti) Star Wars trilógia fogadja, majd könnyedén navigálhat az egyes trilógiák, önálló filmek és sorozatok között.
             A filmkártyák forgatásával a felhasználó megtekinthtei a film borítóját és a leírását.
             A felhasználó értékelheti is az adott filmet/sorozatot 5 csillagos rendszer használatával.
-
+            A Star Wars oldalról a bal felső sarokban lévő menüvel tud a felhasználó átnavigálni egy másik franchise oldalára.
+            A Trónok harcáról és Az utolsó léghajlítóról szóló oldalak hasonlóan működnek a Star Wars oldalhoz, csak megjelenésben különböznek.
         </p>
 
     <h2>Fogalomtár</h2>
