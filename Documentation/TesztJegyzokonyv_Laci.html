@@ -21,49 +21,7 @@
 
 <body>
     <h1>Teszt jegyzőkönyv: Takács László István</h1>
-    <table hidden>
-        <tr>
-          <th>Időpont</th>
-          <th>Vizsgálat</th>
-          <th>Elvárás</th>
-          <th>Eredmény</th>
-          <th>Hibák</th>
-        </tr>
-        <tr>
-          <td>2022.01.13</td>
-          <td>Oldal működésének tesztelése Google Chrome-ban és Brave-ben</td>
-          <td rowspan="3">Ctrl+Görgő segítségével ne folyjon szét az oldal.</td>
-          <td>Sikeres</td>
-          <td>Nem volt</td>
-        </tr>
-        <tr>
-          <td>2022.01.14</td>
-          <td>Oldal működésének tesztelése Mozilla Firefox-ban</td>
-          <td>Sikeres</td>
-          <td>Nem volt</td>
-        </tr>
-        <tr>
-          <td>2022.01.14</td>
-          <td>Oldal működésének tesztelése Microsoft Edge-ben</td>
-          <td>Sikeres</td>
-          <td>Nem volt</td>
-        </tr>
-        <tr>
-          <td>2022.01.16</td>
-          <td>Oldal működésének tesztelése Androidos mobilon, Google Chrome-ban</td>
-          <td>Androidos telefonon a Chrome böngészőben működjön a stílus és az adatfeldolgozás is.</td>
-          <td>Sikertelen</td>
-          <td>CSS-t nem érzékeli</td>
-        </tr>
-        <tr>
-          <td>2022.01.18</td>
-          <td>Terheléses tesztelés asztali gépen</td>
-          <td>Felmérni, hogy 50 példányban futtatva nem fogyaszt-e túl sokat.</td>
-          <td>Sikeres</td>
-          <td>Nem volti</td>
-        </tr>
-        <tr>
-    </table>
+
     <table>
       <tr class="header">
         <td>Böngésző</td>
@@ -87,14 +45,14 @@
         <td>2023.01.13</td>
         <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
         <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
-        <td>500%-on nem fér el a szöveg a kártyákban, de 25-400% között helyes működés teljes képernyő esetén.<br>Felezett szélességnél 200%-ig van optimális működés. Függőleges irányban való átméretezés viszont nem okoz gondokat.</td>
-        <td></td>
+        <td>500%-on nem fér el a szöveg bizonyos kártyákban, de 25-400% között helyes működés teljes képernyő esetén.<br>Felezett szélességnél 200%-ig van optimális működés. Függőleges irányban való átméretezés viszont nem okoz gondokat.</td>
+        <td>Ha nagyon lecsökkentjük a szélességet, hajlamosak a kártyából kifolyni a szövegek még 125-200% között is.</td>
       </tr>
       <tr>
         <td>2023.01.22</td>
         <td>Terheléses tesztelés</td>
         <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
-        <td></td>
+        <td>Egy-egy lap átlagosan 30 MB RAM-ot vesz igénybe (40 példány esetén ez 1,2 GB volt), a processzor igénybevétele pedig ingadozó volt, de összességében kifejezetten alacsony.</td>
         <td></td>
       </tr>
       <tr>
@@ -109,14 +67,14 @@
         <td></td>
         <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
         <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
-        <td></td>
+        <td>Az 5. és 6. évad esetében az 500%-os nagyítás túlcsordulást okoz, de 400%-on mindegyik kártya helyesen működik.</td>
         <td></td>
       </tr>
       <tr>
         <td></td>
         <td>Terheléses tesztelés</td>
         <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
-        <td></td>
+        <td>Oldalanként átlagosan 22 MB RAM-igény (40 példány esetén 880 MB), a processzor pedig alacsony és ingadozó mértékben van használva.</td>
         <td></td>
       </tr>
       <tr>
@@ -138,7 +96,7 @@
         <td></td>
         <td>Terheléses tesztelés</td>
         <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
-        <td></td>
+        <td>Példányonként átlagosan 17 MB RAM-ra van szüksége ennek az oldalnak. (összesen 680 MB)</td>
         <td></td>
       </tr>
       <tr>
