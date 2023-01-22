@@ -197,6 +197,16 @@ body {
     color: rgb(42, 78, 108);
 }
 
+.atla_button, .atla_select{
+    background-color: #80df80;
+    color: rgb(0, 44, 58);
+}
+
+.atla_button:hover,.atla_select:hover{
+    background-color: #90ff90;
+    color: rgb(42, 78, 108);
+}
+
 .star_rating{
     user-select: none;
     text-align: center;
