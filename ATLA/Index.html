@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Avatár</title>
 </head>
-<body class="atla_body">
+<body class="atla_body" onload="StarPage" >
     <script src="script.js"></script>
 
     <!--MENÜ-->   
@@ -25,6 +25,21 @@
         </div>
     </div>
 
+    <div class="container" id="header">
+        <div id="prev_page">
+            <button class="atla_button button" onclick="PrevPage()">Előző</button>
+        </div>
+        <select class="atla_select select" id="jump_page" name="jump" onchange="SelectedPage()">
+            <option value="default" selected="selected">--Ugrás másik oldalra--</option>
+            <option value="aang">Aang legendája</option>
+            <option value="korra">Korra legendája</option>
+            <option value="books">Előzménykönyvek</option>
+            <option value="badmovie">Film</option>
+        </select>
+        <div id="next_page">
+            <button class="atla_button button" onclick="NextPage()">Következő</button>
+        </div>
+    </div>
 
     <div class="container" id="aang">
         <div class="card" id="card_water">

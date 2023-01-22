@@ -4,7 +4,6 @@ function StartPage ()
     document.getElementById('korra').style.display='none';
     document.getElementById('books').style.display='none';
     document.getElementById('badmovie').style.display='none';
-    document.getElementById('badmovie').style.display='none';
 }
 function PrevPage ()
 {
