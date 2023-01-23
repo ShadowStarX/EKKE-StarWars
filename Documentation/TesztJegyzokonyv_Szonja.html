@@ -2,41 +2,541 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Star Wars</title>
+    <title>Konyecsny Szonja ~ Tesztjegyzőkönyv</title>
     <style>
-      table,td,th{
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #87CEFA;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #87CEFA;
+}
+
+th {
+  background-color: #F5FFFA;
+}
+
+tr:nth-child(even) {
+  background-color: #F0FFFF;
+}
+
+tr.header {
+  background-color: #ff69b4;
+  color: white;
+}
     </style>
 </head>
 
 <body>
-    <h1>Teszt jegyzőkönyv: Konyecsny Szonja Anilla</h1>
-    <table>
-        <tr>
-          <th>Időpont</th>
-          <th>Vizsgálat</th>
-          <th>Elvárás</th>
-          <th>Eredmény</th>
-          <th>Hibák</th>
-        </tr>
-        <tr>
-          <td>2022.12.28</td>
-          <td>kártyák tesztelése, oldal színek tesztelése</td>
-          <td>A kártyák hover esetén forogjanak, egyik oldalán a film borítója, másikon pedig annak összefoglalója jelenjen meg. Az oldal alapvetően sötét színekből építkezik, kiemelésként világosabb színek használata, ezek legyenek összhangban egymással és legyen olvasható.</td>
-          <td>Sikeres</td>
-          <td>Nem volt</td>
-        </tr>
-        <tr>
-          <td>2022.01.14</td>
-          <td>js-el hozzáadott elemek színének tesztelése</td>
-          <td>A JavaScript elemek (lenyíló menü, gombok) színe, külalakja illeszkedjen az oldal stílusához, ne fedjék egymást, jól látható és könnyen kattintható legyen.</td>
-          <td>Sikeres</td>
-          <td>Nem volt</td>
-        </tr>
-        <tr>
-        </tr>
-      </table>
+  <h1>Tesztjegyzőkönyv: Konyecsny Szonja Anilla</h1>
+
+  <!--CSS IMPLEMENTÁCIÓ (HTML)-->
+   <!--sw-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>CSS implementáció <br>(HTML vázhoz)</td>
+      <td>Franchise</td>
+      <td>Időpont</td>
+      <td>Vizsgálat</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Oldal háttere</td>
+      <td rowspan="7">Star Wars</td>
+      <td>2022.12.18.</td>
+      <td>Oldal hátterének megváltozása</td>
+      <td>Az oldal háttere változzon meg a Resources mappában tárolt háttérkép .jpg fájl-ra.</td>
+      <td>Helyes működés, az oldal a megfelelő képet jeleníti meg háttérként.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Kártyák megjelenése</td>
+      <td>2022.12.18.</td>
+      <td>A kártyák jelenjenek meg az oldalon</td>
+      <td>Egy sorban maximum 3 kártya jelenjen meg. 
+        <br>A kártyák arányos méretűek legyenek (mint egy kártyalap).
+        <br>A kártyákon jelenjen meg a megfelelő kép és szöveg.</td>
+      <td>Helyes működés, a kártyák megjelenése az elvárásoknak megfelelően történik.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Kártyák nagyítása</td>
+      <td>2022.12.18.</td>
+      <td>"Zoom on hover" - vagyis a kurzor kártyák fölé helyezése esetén a kártyakép kinagyítása</td>
+      <td>Az eredeti ötlet szerint a kártyák kinagyíthatók voltak, ennek a CSS implementációja került tesztelésre, hogy a transzformáció arányos legyen.</td>
+      <td>A teszt sikeres volt, a képek arányosan kerültek kinagyításra és a szöveg is olvashatóbb lett ezáltal, de az ötlet végül elvetésre került egy érdekesebb megvalósítás (forgatás) érdekében.</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Kártyák forgatása</td>
+      <td>2022.12.18.</td>
+      <td>A végső terv szerint a kártyák forgásával valósítottuk meg a filmborító és a filmhez tartozó összefoglaló szöveg megjelenítését.</td>
+      <td>A kártyák forgó "animációja", hover esetén a kártya forduljon meg, és a szöveg látszódjon, majd a hover megszűnését követően forduljon vissza magától, alapesetben filmborító látszódjon. </td>
+      <td>A végső teszt sikeres volt, a kártyák forgása végül kellőképp dinamikus, de még szemmel jól követhető.</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Kártyák forgási iránya</td>
+      <td>2022.12.18.</td>
+      <td>A kártyák forgása megfelelő irányba történjen</td>
+      <td>A kártyák forgó "animációja" megfelelő irányba történjen, tehát jobbra forduljon a borító feletti hover esetén, majd ugyanez történjen csak visszafelé (mintha kártyát forgatnánk oda-vissza).</td>
+      <td>A teszt sikeresen zárult, a kártyák forgása kielégítő.</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Szöveg és csillagok megjelenése a kártyákon</td>
+      <td>2022.12.18.</td>
+      <td>A szöveg és a szavazást szolgáló csillagok arányosan, jól láthatóan/olvashatóan jelenjenek meg a kártyák hátoldalán.</td>
+      <td>A szöveg alapvetően élénk színű, a háttértől elütő legyen, a cím kellőképp különüljün el a törzsszövegtől, alatta a szavazást szolgáló csillagok jól kattinthathatók, könnyek kezelhetők legyenek.</td>
+      <td>A teszt sikerrel zárult, az elvárásoknak megfelelően.</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Reszponzivitás</td>
+      <td>2022.12.18.</td>
+      <td>Oldal grafikus megjelenésének reszponzivitása</td>
+      <td>A háttér és a kártyák a lehető legnagyobb tűréshatárral az elvártaknak megfelelően, arányoson és igényesen jelenjenek meg a lehető legtöbb eszközön.
+      <td>A kártyák 300%-ig helyesen működnek, afölött a szöveg már kicsúszik az adott kártyából.
+        <br>Alacsony százalékon semmilyen probléma nem merült fel, a reszponzivitás az elvártaknak megfelelően valósult meg.
+      </td>
+    </tr>
+
+        <!--got-->
+    <tr>
+      <td>1.</td>
+      <td>Oldal háttere</td>
+      <td rowspan="6">Trónok harca</td>
+      <td>2023.01.20.</td>
+      <td>Oldal hátterének megváltozása</td>
+      <td>Az oldal háttere változzon meg a Resources mappában tárolt háttérkép .jpg fájl-ra.</td>
+      <td>Helyes működés, az oldal a megfelelő képet jeleníti meg háttérként.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Kártyák megjelenése</td>
+      <td>2023.01.20.</td>
+      <td>A kártyák jelenjenek meg az oldalon</td>
+      <td>Egy sorban maximum 3 kártya jelenjen meg. 
+        <br>A kártyák arányos méretűek legyenek (mint egy kártyalap).
+        <br>A kártyákon jelenjen meg a megfelelő kép és szöveg.</td>
+      <td>Helyes működés, a kártyák megjelenése az elvárásoknak megfelelően történik.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Kártyák forgatása</td>
+      <td>2023.01.20.</td>
+      <td>A végső terv szerint a kártyák forgásával valósítottuk meg a filmborító és a filmhez tartozó összefoglaló szöveg megjelenítését.</td>
+      <td>A kártyák forgó "animációja", hover esetén a kártya forduljon meg, és a szöveg látszódjon, majd a hover megszűnését követően forduljon vissza magától, alapesetben filmborító látszódjon. </td>
+      <td>A végső teszt sikeres volt, a kártyák forgása végül kellőképp dinamikus, de még szemmel jól követhető.</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Kártyák forgási iránya</td>
+      <td>2023.01.20.</td>
+      <td>A kártyák forgása megfelelő irányba történjen</td>
+      <td>A kártyák forgó "animációja" megfelelő irányba történjen, tehát jobbra forduljon a borító feletti hover esetén, majd ugyanez történjen csak visszafelé (mintha kártyát forgatnánk oda-vissza).</td>
+      <td>A teszt sikeresen zárult, a kártyák forgása kielégítő.</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Szöveg és csillagok megjelenése a kártyákon</td>
+      <td>2023.01.20.</td>
+      <td>A szöveg és a szavazást szolgáló csillagok arányosan, jól láthatóan/olvashatóan jelenjenek meg a kártyák hátoldalán.</td>
+      <td>A szöveg alapvetően élénk színű, a háttértől elütő legyen, a cím kellőképp különüljün el a törzsszövegtől, alatta a szavazást szolgáló csillagok jól kattinthathatók, könnyek kezelhetők legyenek.</td>
+      <td>A teszt sikerrel zárult, az elvárásoknak megfelelően.</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Reszponzivitás</td>
+      <td>2022.12.20.</td>
+      <td>Oldal grafikus megjelenésének reszponzivitása</td>
+      <td>A háttér és a kártyák a lehető legnagyobb tűréshatárral az elvártaknak megfelelően, arányoson és igényesen jelenjenek meg a lehető legtöbb eszközön.
+      <td>A kártyák 300%-ig helyesen működnek, afölött a szöveg már kicsúszik az adott kártyából.
+        <br>Alacsony százalékon semmilyen probléma nem merült fel, a reszponzivitás az elvártaknak megfelelően valósult meg.
+      </td>
+    </tr>
+
+      <!--avatár-->
+      <tr>
+        <td>1.</td>
+        <td>Oldal háttere</td>
+        <td rowspan="6">Avatár</td>
+        <td>2023.01.20.</td>
+        <td>Oldal hátterének megváltozása</td>
+        <td>Az oldal háttere változzon meg a Resources mappában tárolt háttérkép .jpg fájl-ra.</td>
+        <td>Helyes működés, az oldal a megfelelő képet jeleníti meg háttérként.</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Kártyák megjelenése</td>
+        <td>2023.01.20.</td>
+        <td>A kártyák jelenjenek meg az oldalon</td>
+        <td>Egy sorban maximum 3 kártya jelenjen meg. 
+          <br>A kártyák arányos méretűek legyenek (mint egy kártyalap).
+          <br>A kártyákon jelenjen meg a megfelelő kép és szöveg.</td>
+        <td>Helyes működés, a kártyák megjelenése az elvárásoknak megfelelően történik.</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Kártyák forgatása</td>
+        <td>2023.01.20.</td>
+        <td>A végső terv szerint a kártyák forgásával valósítottuk meg a filmborító és a filmhez tartozó összefoglaló szöveg megjelenítését.</td>
+        <td>A kártyák forgó "animációja", hover esetén a kártya forduljon meg, és a szöveg látszódjon, majd a hover megszűnését követően forduljon vissza magától, alapesetben filmborító látszódjon. </td>
+        <td>A végső teszt sikeres volt, a kártyák forgása végül kellőképp dinamikus, de még szemmel jól követhető.</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Kártyák forgási iránya</td>
+        <td>2023.01.20.</td>
+        <td>A kártyák forgása megfelelő irányba történjen</td>
+        <td>A kártyák forgó "animációja" megfelelő irányba történjen, tehát jobbra forduljon a borító feletti hover esetén, majd ugyanez történjen csak visszafelé (mintha kártyát forgatnánk oda-vissza).</td>
+        <td>A teszt sikeresen zárult, a kártyák forgása kielégítő.</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Szöveg és csillagok megjelenése a kártyákon</td>
+        <td>2023.01.20.</td>
+        <td>A szöveg és a szavazást szolgáló csillagok arányosan, jól láthatóan/olvashatóan jelenjenek meg a kártyák hátoldalán.</td>
+        <td>A szöveg alapvetően élénk színű, a háttértől elütő legyen, a cím kellőképp különüljün el a törzsszövegtől, alatta a szavazást szolgáló csillagok jól kattinthathatók, könnyek kezelhetők legyenek.</td>
+        <td>A teszt sikerrel zárult, az elvárásoknak megfelelően.</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Reszponzivitás</td>
+        <td>2022.12.20.</td>
+        <td>Oldal grafikus megjelenésének reszponzivitása</td>
+        <td>A háttér és a kártyák a lehető legnagyobb tűréshatárral az elvártaknak megfelelően, arányoson és igényesen jelenjenek meg a lehető legtöbb eszközön.
+        <td>A kártyák 300%-ig helyesen működnek, afölött a szöveg már kicsúszik az adott kártyából.
+          <br>Alacsony százalékon semmilyen probléma nem merült fel, a reszponzivitás az elvártaknak megfelelően valósult meg.
+        </td>
+      </tr>
+  </table>
+
+  <!--JS IMPLEMENTÁCIÓ-->
+   <!--sw-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>CSS implementáció <br>(JavaScript funkciókhoz)</td>
+      <td>Franchise</td>
+      <td>Időpont</td>
+      <td>Vizsgálat</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Gombok színe/mérete/távolság/pozíció</td>
+      <td rowspan="2">Star Wars</td>
+      <td>2023.01.14.</td>
+      <td>Gombok és kártyák működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott navigációs gombok, és az ezek által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A gombok színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a lenyíló menütől.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Lenyíló menü színe/mérete/pozíció</td>
+      <td>2023.01.14.</td>
+      <td>Lenyíló menü működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott lenyíló menü, és az ez által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A lenyíló menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a gomboktól.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+
+    <!--got-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok színe/mérete/távolság/pozíció</td>
+      <td rowspan="2">Trónok Harca</td>
+      <td>2023.01.20.</td>
+      <td>Gombok és kártyák működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott navigációs gombok, és az ezek által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A gombok színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a lenyíló menütől.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Lenyíló menü színe/mérete/pozíció</td>
+      <td>2023.01.20.</td>
+      <td>Lenyíló menü működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott lenyíló menü, és az ez által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A lenyíló menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a gomboktól.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+
+    <!--avatár-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok színe/mérete/távolság/pozíció</td>
+      <td rowspan="2">Avatár</td>
+      <td>2023.01.20.</td>
+      <td>Gombok és kártyák működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott navigációs gombok, és az ezek által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A gombok színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a lenyíló menütől.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Lenyíló menü színe/mérete/pozíció</td>
+      <td>2023.01.20.</td>
+      <td>Lenyíló menü működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció általt létrehozott lenyíló menü, és az ez által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A lenyíló menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a gomboktól.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+  </table>
+
+  <!--BÖNGÉSZŐK TESZTELÉSE-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>Böngészőbeli eltérések vizsgálata</td>
+      <td>Böngésző</td>
+      <td>Franchise</td>
+      <td>Időpont</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <!--FIREFOX-->
+     <!--sw-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="10">Mozzilla Firefox</td>
+      <td rowspan="3">Star Wars</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>300%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+    <!--got-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="3">Trónok harca</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+        <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>300%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <!--avatár-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="3">Avatár</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak tesztelése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>300%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+     <!--összes-->
+    <tr>
+      <td>1.</td>
+      <td>Navigációs teszt</td>
+      <td>Minden oldal</td>
+      <td>2023.01.21.</td>
+      <td>A navigációs fejléc tartalma (gombok, lenyíló menü), megfelelően működjön és a megfelelő helyre mutasson, mindez pedig az elvárásoknak megfelelően menjen végbe a böngészőben.</td>
+      <td>Helyes működés</td>
+    </tr>
+
+    <!--TOR-->
+     <!--sw-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="10">Tor</td>
+      <td rowspan="3">Star Wars</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>240%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+    <!--got-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="3">Trónok harca</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>240%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+    <!--avatár-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="3">Avatár</td>
+      <td>2023.01.21.</td>
+      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
+        <br>A kártyák forgása hover esetén történik.
+        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
+        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.01.21.</td>
+      <td>A kártyákban a szöveg megfelelően jelenjen meg különböző nagyításokban.
+        <br>A kártyák reszponzívan viselkedjenek, adott nagyítást követően új sorba kerüljenek, ne lógjanak ki a képből. 
+        <br>Csökkentett oldalszélesség esetén is új sorba kerüljenek a kártyák, ne pedig eltűnjenek részlegesen vagy teljesen. </td>
+      <td>240%-ig megfelelően jelennek meg a szövegek a kártyákon, afelett már kicsúsznak a kártyákból.
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a kártyák a 
+        reszponzív követelményeknek megfelelően sorolódnak be egymás alá az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.01.21.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+    <!--összes-->
+    <tr>
+      <td>1.</td>
+      <td>Navigációs teszt</td>
+      <td>Minden oldal</td>
+      <td>2023.01.21.</td>
+      <td>A navigációs fejléc tartalma (gombok, lenyíló menü), megfelelően működjön és a megfelelő helyre mutasson, mindez pedig az elvárásoknak megfelelően menjen végbe a böngészőben.</td>
+      <td>Helyes működés</td>
+    </tr>
+  </table>
+
+    <!--ESZKÖZ-->
+  <h2>Teszteléshez használt eszköz tulajdonságai:</h2>
+  <ul>
+    <li>Megnevezés: MacBook Retina, 2017, 12-inch</li>
+    <li>Processzor: 1,2 GHz Kétmagos Intel Core m3 processzor</li>
+    <li>RAM: 8 GB</li>
+    <li>Operációs rendszer: macOS Ventura 13.1</li>
+    <li>Képernyő felbontása: 2304 x 1440 </li>
+  </ul>
 </body>
 </html>
