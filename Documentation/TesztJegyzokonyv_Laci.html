@@ -4,18 +4,43 @@
     <meta charset="UTF-8">
     <title>Takács László ~ tesztjegyzőkönyv</title>
     <style>
-      table,td,th{
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      .header td{
-        font-weight: bold;
-        text-align: center;
-      }
-      h1 {
-        font-size: 30pt;
-        text-align: center;
-      }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #40E0D0;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #40E0D0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #40E0D0;
+}
+
+th {
+  background-color: #F5FFFA;
+}
+
+tr:nth-child(even) {
+  background-color: #F0FFFF;
+}
+
+tr.header {
+  background-color: #40E0D0;
+  color: white;
+}
     </style>
 </head>
 
