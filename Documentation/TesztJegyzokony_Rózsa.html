@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <title>Bakos Rózsa ~ tesztjegyzőkönyv</title>
     <style>
-      table,td,th{
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      .header td{
-        font-weight: bold;
-        text-align: center;
-      }
-      h1 {
-        font-size: 30pt;
-        text-align: center;
-      }
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFA500;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #FFA500;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #FFA500;
+}
+
+th {
+  background-color: #FFA500;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #FFFFE0;
+}
+
+tr.header {
+  background-color: #FFA500;
+  color: white;
+}
     </style>
 </head>
 
